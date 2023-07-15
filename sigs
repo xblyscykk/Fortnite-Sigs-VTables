@@ -15,5 +15,8 @@ GetCameraLocation  -> 0x800
 GetCameraRotation  -> 0x7F8
 GetFOVAngle        -> 0x7B8
 LineOfSightTo      -> 0x768
+AddPitchInput      -> 0xD20
+ClientSetCameraMode-> 0xA28
+AddYawInput        -> 0xD28
 ProcessEvent       -> 0x4D
 DrawTransition     -> 0x6F
