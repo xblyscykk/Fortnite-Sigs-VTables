@@ -20,6 +20,16 @@ LineOfSightTo: 0x7A5676C
 RootComponent: 0x198
 PlayerCameraManager: 0x348
 Mesh: 0x318
+bIgnoreTryToFireSlotCooldown: 0x11C1
+bIsReloadingWeapon: 0x358
+ZiplineSpeedFactor: 0x239C
+ZiplineState: 0x22A0
+CurrentVehicle: 0x2590
+RelativeLocation: 0x128
+RelativeRotation: 0x140
+AimPitchMin: 0x1448
+AimPitchMax: 0x144C
+ReviveFromDBNOTime: 0x46B8
 
 VTables:
 GetPlayerViewPoint -> 0x7F0 | CHANGED
