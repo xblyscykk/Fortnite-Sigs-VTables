@@ -1,4 +1,4 @@
-Updated to Fortnite 25.20
+Fortnite 25.20
 
 Sigs:
 GWorld: 48 89 05 ? ? ? ? 0F 28
@@ -30,6 +30,8 @@ RelativeRotation: 0x140
 AimPitchMin: 0x1448
 AimPitchMax: 0x144C
 ReviveFromDBNOTime: 0x46B8
+TeamIndex: 0x10D0
+AcknowledgedPawn: 0x338
 
 VTables:
 GetPlayerViewPoint -> 0x7F0 | CHANGED
