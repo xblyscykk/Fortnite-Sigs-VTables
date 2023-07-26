@@ -1,22 +1,32 @@
-Updated to v25.11
+Updated to Fortnite 25.20
 
+Sigs:
 GWorld: 48 89 05 ? ? ? ? 0F 28
 FreeFn: 48 89 D1 48 FF 25 ? ? ? ? C3
-GetBoneMatrix: E8 ? ? ? ? 0F 10 40 68
+GetBoneMatrix: 49 8B CE E8 ? ? ? ? 0F 10 40 68 | CHANGED
 ProjectWorldToScreen: 40 53 55 56 57 41 56 41 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 33 DB
 GObjects: 48 8B 05 ? ? ? ? 48 8B 0C C8 48 8B 04
 GetNameByIndex: 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 8B 19
 LineOfSightTo: 48 8B C4 48 89 58 20 55 56 57 41 54 41 56 48 8D 68 B8
 
+Offsets: (all changed)
+GWorld: 0xEE2F8E8
+FreeFn: 0xAB74D18
+GetBoneMatrix: 0x12FD560
+ProjectWorldToScreen: 0x7AC9D04
+GObjects: 0x10B3436
+GetNameByIndex: 0xD1D6AC
+LineOfSightTo: 0x7A5676C
+
 VTables:
-GetPlayerViewPoint -> 0x7E8
-SetControlRotation -> 0x758
-GetCameraLocation  -> 0x800
-GetCameraRotation  -> 0x7F8
-GetFOVAngle        -> 0x7B8
-LineOfSightTo      -> 0x768
-AddPitchInput      -> 0xD20
-ClientSetCameraMode-> 0xA28
-AddYawInput        -> 0xD28
-ProcessEvent       -> 0x4D
-DrawTransition     -> 0x6F
+GetPlayerViewPoint -> 0x7F0 | CHANGED
+SetControlRotation -> 0x760 | CHANGED
+GetCameraLocation -> 0x808 | CHANGED
+GetCameraRotation -> 0x800 | CHANGED
+GetFOVAngle -> 0x7C0 | CHANGED
+LineOfSightTo -> 0x770 | CHANGED
+AddPitchInput -> 0xD28 | CHANGED
+ClientSetCameraMode-> 0xA30 | CHANGED
+AddYawInput -> 0xD30 | CHANGED
+ProcessEvent -> 0x4D
+DrawTransition -> 0x6F
