@@ -17,6 +17,9 @@ ProjectWorldToScreen: 0x7AC9D04
 GObjects: 0x10B3436
 GetNameByIndex: 0xD1D6AC
 LineOfSightTo: 0x7A5676C
+RootComponent: 0x198
+PlayerCameraManager: 0x348
+Mesh: 0x318
 
 VTables:
 GetPlayerViewPoint -> 0x7F0 | CHANGED
