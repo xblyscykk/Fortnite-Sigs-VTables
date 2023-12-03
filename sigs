@@ -1,35 +1,50 @@
-Fortnite 27.10
-
+Fortnite 28.00
 Signatures:
-UWorld: 48 89 05 ?? ?? ?? ?? 0F 28 D7
+[NEW] GWorld: 48 89 05 ? ? ? ? 44 38 3D ? ? ? ?
 FreeFN: 48 89 D1 48 FF 25 ? ? ? ? C3
-GetBoneMatrix: E8 ? ? ? ? 0F 10 40 68
+BoneMatrix: E8 ? ? ? ? 0F 10 40 68
 ProjectWorldToScreen: 40 53 55 56 57 41 56 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 33 DB 49
 GObjects: 48 8B 05 ? ? ? ? 48 8B 0C C8 48 8B 04 D1
-GetNameByIndex: 48 8B C4 48 89 58 08 48 89 70 18 48 89 78 20 55 41 54 41 55 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 45 33 ED 48 8B FA 4C 89 2A 4C 89 6A 08 8B 19 E8 ? ? ? ? 48 8B D0 8B CB C1 E9 10 0F B7 C3 89 44 24 24 89 4C 24 20 48 8B 44 24 ? 48 C1 E8 20 44 8D 24 00 4C 03 64 CA ? 66 41 83 3C 24 ? 0F 82 ? ? ? ? 41 0F B7 04 24 C1 E8 06 85 C0 44 89 6F 08 8D 50 01 41 0F 44 D5 3B 57 0C 0F 8F ? ? ? ?
+[NEW] GetNameByIndex: 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 33 ED 48 8B FA 48 89 2A 48 89 6A 08 8B
 LineOfSightTo: 48 8B C4 48 89 58 20 55 56 57 41 54 41 56 48 8D 68
 StaticFindObject: 48 89 74 24 ?? 48 89 7C 24 ?? 55 41 54 41 55 41 56 41 57 48 8B EC 48 83 EC ?? 4C 8B E9 48 8D 4D E8
 
+
 VTables:
-DrawTransition: 0x71 [113]
-PostRender: 0x71 [113]
-ProcessEvent: 0x4D [77]
+[NEW] DrawTransition: 0x70 [112]
+[NEW] ViewportClient: 0x71 [113]
+[NEW] PostRender: 0x6F [111]
+[NEW] ProcessEvent: 0x4C [76]
 GetPlayerViewPoint: 0x7F0
 SetControlRotation: 0x760
 GetCameraLocation: 0x808
 GetCameraRotation: 0x800
 GetFOVAngle: 0x7C0
 LineOfSightTo: 0x770
-AddPitchInput: 0xD08
-ClientSetCameraMode: 0xA20
-AddYawInput: 0xD10
+[NEW] AddPitchInput: 0xCF0
+[NEW] ClientSetCameraMode: 0xA08
+[NEW] AddYawInput: 0xCF8
 
-Offsets:
-UWorld: 0xF3022D8
-FreeFn: 0xAF3BC58
-GetBoneMatrix: 0x157E9E8
-ProjectWorldToScreen: 0xA1E0718
-GObjects: 0xF2DB000
-GetNameByIndex: 0xFBACB0
-LineOfSightTo: 0x5A31BA4
-StaticFindObject: 0x10061F0
+Offsets: [ALL NEW]
+UWorld: 0x1123AF78
+FreeFn: 0xC566C28
+GetBoneMatrix: 0x149B864
+ProjectWorldToScreen: 0x35BD6A8
+GObjects: 0x11213D40
+GetNameByIndex: 0x1004854
+LineOfSightTo: 0x65403D0
+StaticFindObject: 0x3EDBF1C
+
+Other New Offsets:
+RelativeLocation: 0x120
+RelativeRotation: 0x138
+OwningGameInstance: 0x1D0
+WeaponData: 0x4A8
+ComponentVelocity: 0x168
+SeasonLevelUIDisplay: 0x10F8
+CurrentWeapon: 0xA20
+CurrentVehicle: 0x2840
+CachedFuelComponent: 0x1250
+CustomTimeDilation: 0x68
+BIgnoreTryToFireSlotCooldownRestriction: 0x1359
+GlobalAnimRateScale: 0xA68
